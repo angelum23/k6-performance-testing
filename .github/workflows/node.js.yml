@@ -15,7 +15,8 @@ jobs:
 
       - name: Setup K6
         uses: grafana/setup-k6-action@v1.1.0
-      - name: Run local k6 test
+
+      - name: Run Public Tender Roadmap Test
         uses: grafana/run-k6-action@v1.3.1
         with:
-          path: src/tests
+          path: src/tests/PublicTenderRoadmap.spec.js
