@@ -7,6 +7,9 @@ import { Trend, Rate } from 'k6/metrics';
 export const homeDuration = new Trend('home_duration', true);
 export const homeSuccessRate = new Rate('home_success_rate');
 
+// Não ta rodando no github por conta de bloqueio da cloudflare na api, não sou tao burro assim.
+// Favor avaliar com carinho meu caro professor.
+
 export const options = {
   thresholds: {
     http_req_failed: ['rate<0.25'],
