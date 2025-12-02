@@ -30,8 +30,8 @@ export function handleSummary(data) {
 
 export default function () {
   const baseUrl = 'https://publictenderroadmapper-production.up.railway.appapi';
-  const loginUrl = `${baseUrl}/api/Auth/login`;
-  const homeUrl = `${baseUrl}/api/Roadmap/Home?Skip=0&Take=10`;
+  const loginUrl = `${baseUrl}/Auth/login`;
+  const homeUrl = `${baseUrl}/Roadmap/Home?Skip=0&Take=10`;
 
   const loginPayload = JSON.stringify({
     email: 'admin@admin.com',
